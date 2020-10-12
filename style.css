@@ -11,7 +11,6 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /*background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));*/
     font-family: sans-serif;
     color: black;
 }
@@ -19,11 +18,16 @@ body{
 .location,
 .temperature{
     padding-top: 10%;
-    height: 200%;
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding-top: 25%;
+  }
 }
 
 .temperature {
@@ -43,34 +47,37 @@ body{
 
 .degree-section span {
     margin: 0%;
-    font-size: 10vh;
+    font-size: 15vh;
 }
 
 .degree-section h2 {
     font-size: 20vh;
-
 }
 
 #uw img {
-     position: absolute;
-     top: 3%;
-     right: 80%;
+    width: 28%;
+    position: absolute;
+    top: 2%;
+    right: 70%;
  }
 
 #wlu img {
+    width: 23%;
     position: absolute;
-    top: 4%;
+    top: 3%;
     right: 4%;
 }
 
 #mainlogo img {
+    width: 30%;
     position: absolute;
-    top: 7%;
-    right: 31%;
+    top: 6%;
+    right: 29%;
 }
 
 #circle img {
+    width: 8%;
     position: absolute;
-    top: 5%;
+    top: 3%;
     right: 59%;
 }
